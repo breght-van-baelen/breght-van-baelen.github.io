@@ -83,21 +83,24 @@ pre {
     color: rgb(131, 148, 150);
 }
 
+.code,
+.gutter{
+    border:none;
+    overflow: auto;
+    background: none 0% 0% / auto repeat scroll padding-box border-box rgb(247, 247, 247);
+}
+
 .gutter {
     border: none;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
     border-left: 5px solid #558abb;
     border-right: 1px solid #e6e6e6;
+    display: block;
 }
 
 .code {
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
 
-}
-.code,
-.gutter{
-    overflow: auto;
-    background: none 0% 0% / auto repeat scroll padding-box border-box rgb(247, 247, 247);
 }
