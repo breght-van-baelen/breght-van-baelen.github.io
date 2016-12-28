@@ -1,200 +1,138 @@
-/*
-	Phantom by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+// Dean Attali / Beautiful Jekyll 2016
 
-(function($) {
+var main = {
 
-	skel.breakpoints({
-		xlarge:	'(max-width: 1680px)',
-		large:	'(max-width: 1280px)',
-		medium:	'(max-width: 980px)',
-		small:	'(max-width: 736px)',
-		xsmall:	'(max-width: 480px)'
-	});
+  bigImgEl : null,
+  numImgs : null,
 
-	$(function() {
+  init : function() {
+    // Shorten the navbar after scrolling a little bit down
+    $(window).scroll(function() {
+        if ($(".navbar").offset().top > 50) {
+            $(".navbar").addClass("top-nav-short");
+        } else {
+            $(".navbar").removeClass("top-nav-short");
+        }
+    });
+    
+    // On mobile, hide the avatar when expanding the navbar menu
+    $('#main-navbar').on('show.bs.collapse', function () {
+      $(".navbar").addClass("top-nav-expanded");
+    });
+    $('#main-navbar').on('hidden.bs.collapse', function () {
+      $(".navbar").removeClass("top-nav-expanded");
+    });
+	
+    // On mobile, when clicking on a multi-level navbar menu, show the child links
+    $('#main-navbar').on("click", ".navlinks-parent", function(e) {
+      var target = e.target;
+      $.each($(".navlinks-parent"), function(key, value) {
+        if (value == target) {
+          $(value).parent().toggleClass("show-children");
+        } else {
+          $(value).parent().removeClass("show-children");
+        }
+      });
+    });
+    
+    // Ensure nested navbar menus are not longer than the menu header
+    var menus = $(".navlinks-container");
+    if (menus.length > 0) {
+      var navbar = $("#main-navbar ul");
+      var fakeMenuHtml = "<li class='fake-menu' style='display:none;'><a></a></li>";
+      navbar.append(fakeMenuHtml);
+      var fakeMenu = $(".fake-menu");
 
-		var	$window = $(window),
-			$body = $('body');
+      $.each(menus, function(i) {
+        var parent = $(menus[i]).find(".navlinks-parent");
+        var children = $(menus[i]).find(".navlinks-children a");
+        var words = [];
+        $.each(children, function(idx, el) { words = words.concat($(el).text().trim().split(/\s+/)); });
+        var maxwidth = 0;
+        $.each(words, function(id, word) {
+          fakeMenu.html("<a>" + word + "</a>");
+          var width =  fakeMenu.width();
+          if (width > maxwidth) {
+            maxwidth = width;
+          }
+        });
+        $(menus[i]).css('min-width', maxwidth + 'px')
+      });
 
-		// Disable animations/transitions until the page has loaded.
-			$body.addClass('is-loading');
+      fakeMenu.remove();
+    }        
+    
+    // show the big header image	
+    main.initImgs();
+  },
+  
+  initImgs : function() {
+    // If the page was large images to randomly select from, choose an image
+    if ($("#header-big-imgs").length > 0) {
+      main.bigImgEl = $("#header-big-imgs");
+      main.numImgs = main.bigImgEl.attr("data-num-img");
 
-			$window.on('load', function() {
-				window.setTimeout(function() {
-					$body.removeClass('is-loading');
-				}, 100);
-			});
+          // 2fc73a3a967e97599c9763d05e564189
+	  // set an initial image
+	  var imgInfo = main.getImgInfo();
+	  var src = imgInfo.src;
+	  var desc = imgInfo.desc;
+  	  main.setImg(src, desc);
+  	
+	  // For better UX, prefetch the next image so that it will already be loaded when we want to show it
+  	  var getNextImg = function() {
+	    var imgInfo = main.getImgInfo();
+	    var src = imgInfo.src;
+	    var desc = imgInfo.desc;		  
+	    
+		var prefetchImg = new Image();
+  		prefetchImg.src = src;
+		// if I want to do something once the image is ready: `prefetchImg.onload = function(){}`
+		
+  		setTimeout(function(){
+                  var img = $("<div></div>").addClass("big-img-transition").css("background-image", 'url(' + src + ')');
+  		  $(".intro-header.big-img").prepend(img);
+  		  setTimeout(function(){ img.css("opacity", "1"); }, 50);
+		  
+		  // after the animation of fading in the new image is done, prefetch the next one
+  		  //img.one("transitioned webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
+		  setTimeout(function() {
+		    main.setImg(src, desc);
+			img.remove();
+  			getNextImg();
+		  }, 1000); 
+  		  //});		
+  		}, 6000);
+  	  };
+	  
+	  // If there are multiple images, cycle through them
+	  if (main.numImgs > 1) {
+  	    getNextImg();
+	  }
+    }
+  },
+  
+  getImgInfo : function() {
+  	var randNum = Math.floor((Math.random() * main.numImgs) + 1);
+    var src = main.bigImgEl.attr("data-img-src-" + randNum);
+	var desc = main.bigImgEl.attr("data-img-desc-" + randNum);
+	
+	return {
+	  src : src,
+	  desc : desc
+	}
+  },
+  
+  setImg : function(src, desc) {
+	$(".intro-header.big-img").css("background-image", 'url(' + src + ')');
+	if (typeof desc !== typeof undefined && desc !== false) {
+	  $(".img-desc").text(desc).show();
+	} else {
+	  $(".img-desc").hide();  
+	}
+  }
+};
 
-		// Touch?
-			if (skel.vars.touch)
-				$body.addClass('is-touch');
+// 2fc73a3a967e97599c9763d05e564189
 
-		// Forms.
-			var $form = $('form');
-
-			// Auto-resizing textareas.
-				$form.find('textarea').each(function() {
-
-					var $this = $(this),
-						$wrapper = $('<div class="textarea-wrapper"></div>'),
-						$submits = $this.find('input[type="submit"]');
-
-					$this
-						.wrap($wrapper)
-						.attr('rows', 1)
-						.css('overflow', 'hidden')
-						.css('resize', 'none')
-						.on('keydown', function(event) {
-
-							if (event.keyCode == 13
-							&&	event.ctrlKey) {
-
-								event.preventDefault();
-								event.stopPropagation();
-
-								$(this).blur();
-
-							}
-
-						})
-						.on('blur focus', function() {
-							$this.val($.trim($this.val()));
-						})
-						.on('input blur focus --init', function() {
-
-							$wrapper
-								.css('height', $this.height());
-
-							$this
-								.css('height', 'auto')
-								.css('height', $this.prop('scrollHeight') + 'px');
-
-						})
-						.on('keyup', function(event) {
-
-							if (event.keyCode == 9)
-								$this
-									.select();
-
-						})
-						.triggerHandler('--init');
-
-					// Fix.
-						if (skel.vars.browser == 'ie'
-						||	skel.vars.mobile)
-							$this
-								.css('max-height', '10em')
-								.css('overflow-y', 'auto');
-
-				});
-
-			// Fix: Placeholder polyfill.
-				$form.placeholder();
-
-		// Prioritize "important" elements on medium.
-			skel.on('+medium -medium', function() {
-				$.prioritize(
-					'.important\\28 medium\\29',
-					skel.breakpoint('medium').active
-				);
-			});
-
-		// Menu.
-			var $menu = $('#menu');
-
-			$menu.wrapInner('<div class="inner"></div>');
-
-			$menu._locked = false;
-
-			$menu._lock = function() {
-
-				if ($menu._locked)
-					return false;
-
-				$menu._locked = true;
-
-				window.setTimeout(function() {
-					$menu._locked = false;
-				}, 350);
-
-				return true;
-
-			};
-
-			$menu._show = function() {
-
-				if ($menu._lock())
-					$body.addClass('is-menu-visible');
-
-			};
-
-			$menu._hide = function() {
-
-				if ($menu._lock())
-					$body.removeClass('is-menu-visible');
-
-			};
-
-			$menu._toggle = function() {
-
-				if ($menu._lock())
-					$body.toggleClass('is-menu-visible');
-
-			};
-
-			$menu
-				.appendTo($body)
-				.on('click', function(event) {
-					event.stopPropagation();
-				})
-				.on('click', 'a', function(event) {
-
-					var href = $(this).attr('href');
-
-					event.preventDefault();
-					event.stopPropagation();
-
-					// Hide.
-						$menu._hide();
-
-					// Redirect.
-						if (href == '#menu')
-							return;
-
-						window.setTimeout(function() {
-							window.location.href = href;
-						}, 350);
-
-				})
-				.append('<a class="close" href="#menu">Close</a>');
-
-			$body
-				.on('click', 'a[href="#menu"]', function(event) {
-
-					event.stopPropagation();
-					event.preventDefault();
-
-					// Toggle.
-						$menu._toggle();
-
-				})
-				.on('click', function(event) {
-
-					// Hide.
-						$menu._hide();
-
-				})
-				.on('keydown', function(event) {
-
-					// Hide on escape.
-						if (event.keyCode == 27)
-							$menu._hide();
-
-				});
-
-	});
-
-})(jQuery);
+document.addEventListener('DOMContentLoaded', main.init);
