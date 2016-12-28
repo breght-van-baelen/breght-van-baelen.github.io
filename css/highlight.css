@@ -85,7 +85,7 @@ pre {
 
 .code,
 .gutter{
-    border:none;
+    border: none;
     overflow: auto;
     background: none 0% 0% / auto repeat scroll padding-box border-box rgb(247, 247, 247);
 }
