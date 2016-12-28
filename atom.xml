@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-12-28T17:03:37.664Z</updated>
+  <updated>2016-12-28T17:09:57.008Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2016/12/27/hello-world/"/>
     <id>http://yoursite.com/2016/12/27/hello-world/</id>
     <published>2016-12-27T22:59:11.494Z</published>
-    <updated>2016-12-28T17:03:37.664Z</updated>
+    <updated>2016-12-28T17:09:57.008Z</updated>
     
     <content type="html"><![CDATA[<hr>
 <p><strong>Advertisement :)</strong></p>
@@ -94,7 +94,8 @@ line 3 of code
 </code></pre><p>Block code “fences”</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Sample text here...</div></pre></td></tr></table></figure>
 <p>Syntax highlighting</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> foo = <span class="function"><span class="keyword">function</span> (<span class="params">bar</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> bar++;</div><div class="line">&#125;;</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(foo(<span class="number">5</span>));</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> foo = <span class="function"><span class="keyword">function</span> (<span class="params">bar</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> bar++;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<p>console.log(foo(5));<br>```</p>
 <h2 id="Tables"><a href="#Tables" class="headerlink" title="Tables"></a>Tables</h2><table>
 <thead>
 <tr>
