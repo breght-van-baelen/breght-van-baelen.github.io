@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-12-28T17:21:31.802Z</updated>
+  <updated>2016-12-28T21:42:48.262Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2016/12/27/hello-world/"/>
     <id>http://yoursite.com/2016/12/27/hello-world/</id>
     <published>2016-12-27T22:59:11.494Z</published>
-    <updated>2016-12-28T17:21:31.802Z</updated>
+    <updated>2016-12-28T21:42:48.262Z</updated>
     
     <content type="html"><![CDATA[<p><strong>Advertisement :)</strong></p>
 <ul>
@@ -146,39 +146,7 @@ line 3 of code
 <p>Like links, Images also have a footnote style syntax</p>
 <p><img src="https://octodex.github.com/images/dojocat.jpg" alt="Alt text" title="The Dojocat"></p>
 <p>With a reference later in the document defining the URL location:</p>
-<h2 id="Plugins"><a href="#Plugins" class="headerlink" title="Plugins"></a>Plugins</h2><p>The killer feature of <code>markdown-it</code> is very effective support of<br><a href="https://www.npmjs.org/browse/keyword/markdown-it-plugin" target="_blank" rel="external">syntax plugins</a>.</p>
-<h3 id="Emojies"><a href="#Emojies" class="headerlink" title="Emojies"></a><a href="https://github.com/markdown-it/markdown-it-emoji" target="_blank" rel="external">Emojies</a></h3><blockquote>
-<p>Classic markup: :wink: :crush: :cry: :tear: :laughing: :yum:</p>
-<p>Shortcuts (emoticons): :-) :-( 8-) ;)</p>
-</blockquote>
-<p>see <a href="https://github.com/markdown-it/markdown-it-emoji#change-output" target="_blank" rel="external">how to change output</a> with twemoji.</p>
-<h3 id="Subscript-Superscript"><a href="#Subscript-Superscript" class="headerlink" title="Subscript / Superscript"></a><a href="https://github.com/markdown-it/markdown-it-sub" target="_blank" rel="external">Subscript</a> / <a href="https://github.com/markdown-it/markdown-it-sup" target="_blank" rel="external">Superscript</a></h3><ul>
-<li>19^th^</li>
-<li>H~2~O</li>
-</ul>
-<h3 id=""><a href="#" class="headerlink" title="\"></a><a href="https://github.com/markdown-it/markdown-it-ins" target="_blank" rel="external">\<ins></ins></a></h3><p>++Inserted text++</p>
-<h3 id="-1"><a href="#-1" class="headerlink" title="\"></a><a href="https://github.com/markdown-it/markdown-it-mark" target="_blank" rel="external">\<mark></mark></a></h3><p>==Marked text==</p>
-<h3 id="Footnotes"><a href="#Footnotes" class="headerlink" title="Footnotes"></a><a href="https://github.com/markdown-it/markdown-it-footnote" target="_blank" rel="external">Footnotes</a></h3><p>Footnote 1 link[^first].</p>
-<p>Footnote 2 link[^second].</p>
-<p>Inline footnote^[Text of inline footnote] definition.</p>
-<p>Duplicated footnote reference[^second].</p>
-<p>[^first]: Footnote <strong>can have markup</strong></p>
-<pre><code>and multiple paragraphs.
-</code></pre><p>[^second]: Footnote text.</p>
-<h3 id="Definition-lists"><a href="#Definition-lists" class="headerlink" title="Definition lists"></a><a href="https://github.com/markdown-it/markdown-it-deflist" target="_blank" rel="external">Definition lists</a></h3><p>Term 1</p>
-<p>:   Definition 1<br>with lazy continuation.</p>
-<p>Term 2 with <em>inline markup</em></p>
-<p>:   Definition 2</p>
-<pre><code>    { some code, part of Definition 2 }
-
-Third paragraph of definition 2.
-</code></pre><p><em>Compact style:</em></p>
-<p>Term 1<br>  ~ Definition 1</p>
-<p>Term 2<br>  ~ Definition 2a<br>  ~ Definition 2b</p>
-<h3 id="Abbreviations"><a href="#Abbreviations" class="headerlink" title="Abbreviations"></a><a href="https://github.com/markdown-it/markdown-it-abbr" target="_blank" rel="external">Abbreviations</a></h3><p>This is HTML abbreviation example.</p>
-<p>It converts “HTML”, but keep intact partial entries like “xxxHTMLyyy” and so on.</p>
-<p>*[HTML]: Hyper Text Markup Language</p>
-<h3 id="Custom-containers"><a href="#Custom-containers" class="headerlink" title="Custom containers"></a><a href="https://github.com/markdown-it/markdown-it-container" target="_blank" rel="external">Custom containers</a></h3><p>::: warning<br><em>here be dragons</em><br>:::</p>
+<h2 id="Videos"><a href="#Videos" class="headerlink" title="Videos"></a>Videos</h2><p><img src="https://www.youtube.com/watch?v=tb2GZ3Bh4p8" alt="Firebase"><br><div class="video-container"><iframe src="//player.vimeo.com/video/177254549" frameborder="0" allowfullscreen></iframe></div><br><div class="video-container"><iframe src="//www.youtube.com/embed/tb2GZ3Bh4p8" frameborder="0" allowfullscreen></iframe></div></p>
 ]]></content>
     
     <summary type="html">
