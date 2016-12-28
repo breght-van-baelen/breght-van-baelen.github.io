@@ -26,7 +26,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #25c0a1;
+  color: #5fbfac;
 }
 blockquote {
   color: #808080;
@@ -64,12 +64,12 @@ hr.small {
 ::-moz-selection {
   color: white;
   text-shadow: none;
-  background: #25c0a1;
+  background: #5fbfac;
 }
 ::selection {
   color: white;
   text-shadow: none;
-  background: #25c0a1;
+  background: #5fbfac;
 }
 img::selection {
   color: white;
@@ -118,7 +118,7 @@ img {
 .navbar-custom .navbar-brand:focus ,
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: #25c0a1;
+  color: #5fbfac;
 }
 
 @media only screen and (min-width: 768px) {
@@ -299,7 +299,7 @@ footer .theme-by {
 .post-preview a:focus,
 .post-preview a:hover {
   text-decoration: none;
-  color: #25c0a1;
+  color: #5fbfac;
 }
 
 .post-preview .post-title {
@@ -499,8 +499,8 @@ footer .theme-by {
 .pager li a:hover,
 .pager li a:focus {
   color: #FFF;
-  background: #25c0a1;
-  border: 1px solid #25c0a1;
+  background: #5fbfac;
+  border: 1px solid #5fbfac;
 }
 
 .pager {
@@ -567,7 +567,7 @@ table tr td :last-child {
 
 .tag:focus, .tag:hover {
   text-decoration: none;
-  color: #25c0a1
+  color: #5fbfac
 }
 
 
