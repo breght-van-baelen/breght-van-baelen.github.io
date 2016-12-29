@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-12-29T22:09:15.528Z</updated>
+  <updated>2016-12-29T22:10:39.720Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2016/12/29/markdown/"/>
     <id>http://yoursite.com/2016/12/29/markdown/</id>
     <published>2016-12-29T10:44:05.021Z</published>
-    <updated>2016-12-29T22:09:15.528Z</updated>
+    <updated>2016-12-29T22:10:39.720Z</updated>
     
     <content type="html"><![CDATA[<p>Markdown is <em>mostly</em>  used as a <strong>text-to-HTML conversion tool</strong> for web writers. After writing using <strong>plain text format</strong>, your markdown document can be converted to structurally valid XHTML (or HTML). For instance, github uses markdown to preview read me’s. Also the posts on this blog are written in markdown.</p>
 <a id="more"></a>
@@ -121,13 +121,15 @@ _   underscore
 !   exclamation mark
 </code></pre><h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><hr>
 <p>Markdown is widely accepted by developers and editors, so it’s the best choice for implementing best practice. Nearly every popular content management solution supports Markdown, if not out-of-the-box, then with an easy-to-install extension.</p>
-<h3 id="Markdown-for-Sublime-Text"><a href="#Markdown-for-Sublime-Text" class="headerlink" title="Markdown for Sublime Text"></a>Markdown for Sublime Text</h3><p><strong>Sublime text 2/3</strong> can preview and build markdown files quickly in your web browser with the <a href="https://packagecontrol.io/packages/Markdown%20Preview" target="_blank" rel="external">Markdown Preview</a> package. To install this package, follow the following steps:</p>
+<h3 id="Markdown-for-Sublime-Text"><a href="#Markdown-for-Sublime-Text" class="headerlink" title="Markdown for Sublime Text"></a>Markdown for Sublime Text</h3><hr>
+<p><strong>Sublime text 2/3</strong> can preview and build markdown files quickly in your web browser with the <a href="https://packagecontrol.io/packages/Markdown%20Preview" target="_blank" rel="external">Markdown Preview</a> package. To install this package, follow the following steps:</p>
 <ol>
 <li><a href="https://packagecontrol.io/installation" target="_blank" rel="external">Install</a> Package Control if you haven’t yet.</li>
 <li>Use <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>P</kbd> then Package Control: Install Package</li>
 <li>Look for <strong>Markdown Preview</strong> and install it.</li>
 </ol>
-<h3 id="Markdown-for-Atom"><a href="#Markdown-for-Atom" class="headerlink" title="Markdown for Atom"></a>Markdown for Atom</h3><p><strong>Atom</strong> has the package <a href="https://atom.io/packages/markdown-preview-plus" target="_blank" rel="external">Markdown Preview Plus (MPP)</a>, which can preview any markdown file with <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>m</kbd> in Atom itself. To install MMP follow the following steps:</p>
+<h3 id="Markdown-for-Atom"><a href="#Markdown-for-Atom" class="headerlink" title="Markdown for Atom"></a>Markdown for Atom</h3><hr>
+<p><strong>Atom</strong> has the package <a href="https://atom.io/packages/markdown-preview-plus" target="_blank" rel="external">Markdown Preview Plus (MPP)</a>, which can preview any markdown file with <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>m</kbd> in Atom itself. To install MMP follow the following steps:</p>
 <ol>
 <li>Search for and install markdown-preview-plus in Atom’s Settings view.</li>
 <li>Search for and disable the built-in package markdown-preview.</li>
