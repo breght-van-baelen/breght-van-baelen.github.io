@@ -319,7 +319,7 @@ footer .theme-by {
   margin: 0 0 10px;
 }
 .post-preview .post-entry {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Lora', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .post-preview .post-read-more {
   font-weight: 800;
@@ -583,8 +583,4 @@ table tr td :last-child {
   left: 0;
   width: 100%;
   height: 100%;
-}
-
-.post-entry {
-  font-family: 'Lora'
 }
