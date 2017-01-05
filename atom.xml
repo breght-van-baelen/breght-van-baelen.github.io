@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-01-05T14:05:56.884Z</updated>
+  <updated>2017-01-05T14:21:22.010Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2017/01/05/ReportingInR/"/>
     <id>http://yoursite.com/2017/01/05/ReportingInR/</id>
     <published>2017-01-05T00:19:36.836Z</published>
-    <updated>2017-01-05T14:05:56.884Z</updated>
+    <updated>2017-01-05T14:21:22.010Z</updated>
     
     <content type="html"><![CDATA[<p>Reporting your R-script can be done <em>in a matter of seconds</em> by using knitr or R Markdown. These libraries were created to quickly show your <strong>R-code</strong> as well as <strong>results</strong> in a <em>wide variety of document types</em>. Knitr can be used to automatically create a report of an existing R-script. R Markdown uses knitr in combination with <strong>markdown</strong> to create more customised reports. </p>
 <p><img src="http://rmarkdown.rstudio.com/images/RMarkdownOutputFormats.png" alt="R-Reporting"></p>
@@ -59,7 +59,7 @@ glimpse(mtcars)
 <tbody>
 <tr>
 <td>html_document</td>
-<td><a href="/content/ReportingInR/R_Report_HTML_Document.html">html file( webpage)</a>    </td>
+<td><a href="/content/ReportingInR/R_Report_HTML_Document.html">html file (webpage)</a>    </td>
 </tr>
 <tr>
 <td>pdf_document</td>
