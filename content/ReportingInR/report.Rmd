@@ -1,0 +1,36 @@
+---
+title: "Hello World"
+author: "Breght Van Baelen"
+date: "January 5, 2017"
+runtime:  shiny
+output: html_document
+---
+## Libraries
+
+The libraries used for the R-script.
+
+```{r}
+library(knitr)
+library(dplyr)
+library(shiny)
+```
+
+## Glimpse
+
+To glimpse at the dataset `mtcars`, execute the following code.
+
+```{r}
+kable(glimpse(mtcars))
+```
+
+## Plot
+
+Plotting the selected dataset gives us the following picture.
+
+```{r echo=FALSE}
+selectInput("data","",c("mtcars","co2"))
+renderPlot({
+  d <- get(input$data)
+  plot(d)
+})
+```
