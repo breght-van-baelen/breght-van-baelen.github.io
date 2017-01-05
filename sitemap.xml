@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2017/01/05/ReportingInR/</loc>
+    <loc>http://yoursite.com/content/ReportingInR/R_Report_Ioslides_Presentation.html</loc>
     
-    <lastmod>2017-01-05T14:21:22.010Z</lastmod>
+    <lastmod>2017-01-05T14:26:03.602Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/content/ReportingInR/R_Report_HTML_Document.html</loc>
     
-    <lastmod>2017-01-05T13:56:13.401Z</lastmod>
+    <lastmod>2017-01-05T14:24:29.239Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017/01/05/ReportingInR/</loc>
+    
+    <lastmod>2017-01-05T14:21:22.010Z</lastmod>
     
   </url>
   
@@ -54,13 +61,6 @@
     <loc>http://yoursite.com/content/ReportingInR/R_Report_HTML_Document_files/shiny.css</loc>
     
     <lastmod>2017-01-05T13:56:12.739Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/content/ReportingInR/R_Report_Ioslides_Presentation.html</loc>
-    
-    <lastmod>2017-01-05T13:55:18.443Z</lastmod>
     
   </url>
   
