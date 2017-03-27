@@ -2,6 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/content/thesis/removal_comparision-3-NN.html</loc>
+    
+    <lastmod>2017-03-27T07:08:22.350Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/content/thesis/removal_comparision-1-NN.html</loc>
+    
+    <lastmod>2017-03-27T07:08:19.053Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/content/thesis/removal_comparision-kMeans.html</loc>
+    
+    <lastmod>2017-03-27T07:08:15.656Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/content/thesis/removal_comparision-9-NN.html</loc>
+    
+    <lastmod>2017-03-27T07:08:11.781Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/content/thesis/removal_comparision-7-NN.html</loc>
+    
+    <lastmod>2017-03-27T07:08:08.687Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/content/thesis/removal_comparision-5-NN.html</loc>
+    
+    <lastmod>2017-03-27T07:08:05.937Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2017/01/05/ReportingInR/</loc>
     
     <lastmod>2017-01-05T18:20:58.488Z</lastmod>
@@ -128,14 +170,14 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/content/Rtmpyq6Cct/file17803a495c94_files/rmd_perf.js</loc>
+    <loc>http://yoursite.com/content/Rtmpyq6Cct/file17803a495c94_files/rmd_perf.css</loc>
     
     <lastmod>2017-01-05T13:21:42.971Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/content/Rtmpyq6Cct/file17803a495c94_files/rmd_perf.css</loc>
+    <loc>http://yoursite.com/content/Rtmpyq6Cct/file17803a495c94_files/rmd_perf.js</loc>
     
     <lastmod>2017-01-05T13:21:42.971Z</lastmod>
     
@@ -149,7 +191,7 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/content/Rtmpyq6Cct/rmarkdown-str178043fe7540.html</loc>
+    <loc>http://yoursite.com/content/Rtmpyq6Cct/file178071942afa_files/highlightjs-1.1/textmate.css</loc>
     
     <lastmod>2017-01-05T13:21:42.484Z</lastmod>
     
@@ -163,7 +205,7 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/content/Rtmpyq6Cct/file178071942afa_files/highlightjs-1.1/textmate.css</loc>
+    <loc>http://yoursite.com/content/Rtmpyq6Cct/rmarkdown-str178043fe7540.html</loc>
     
     <lastmod>2017-01-05T13:21:42.484Z</lastmod>
     
@@ -338,14 +380,14 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/content/Rtmpyq6Cct/file178071942afa_files/bootstrap-3.3.5/css/bootstrap-theme.css</loc>
+    <loc>http://yoursite.com/content/Rtmpyq6Cct/file178071942afa_files/bootstrap-3.3.5/css/bootstrap-theme.min.css</loc>
     
     <lastmod>2017-01-05T13:21:42.133Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/content/Rtmpyq6Cct/file178071942afa_files/bootstrap-3.3.5/css/bootstrap-theme.min.css</loc>
+    <loc>http://yoursite.com/content/Rtmpyq6Cct/file178071942afa_files/bootstrap-3.3.5/css/bootstrap-theme.css</loc>
     
     <lastmod>2017-01-05T13:21:42.133Z</lastmod>
     
@@ -380,13 +422,6 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/content/Rtmpyq6Cct/file17802db9cbc_files/navigation-1.1/tabsets.js</loc>
-    
-    <lastmod>2017-01-05T13:20:13.739Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/content/Rtmpyq6Cct/file17802db9cbc_files/navigation-1.1/sourceembed.js</loc>
     
     <lastmod>2017-01-05T13:20:13.739Z</lastmod>
@@ -401,7 +436,14 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/content/Rtmpyq6Cct/file17802db9cbc_files/navigation-1.1/codefolding.js</loc>
+    <loc>http://yoursite.com/content/Rtmpyq6Cct/file17802db9cbc_files/navigation-1.1/tabsets.js</loc>
+    
+    <lastmod>2017-01-05T13:20:13.739Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/content/Rtmpyq6Cct/file17802db9cbc_files/bootstrap-3.3.5/js/npm.js</loc>
     
     <lastmod>2017-01-05T13:20:13.723Z</lastmod>
     
@@ -415,13 +457,6 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/content/Rtmpyq6Cct/file17802db9cbc_files/bootstrap-3.3.5/shim/html5shiv.min.js</loc>
-    
-    <lastmod>2017-01-05T13:20:13.723Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/content/Rtmpyq6Cct/file17802db9cbc_files/bootstrap-3.3.5/js/bootstrap.min.js</loc>
     
     <lastmod>2017-01-05T13:20:13.723Z</lastmod>
@@ -429,14 +464,21 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/content/Rtmpyq6Cct/file17802db9cbc_files/bootstrap-3.3.5/js/npm.js</loc>
+    <loc>http://yoursite.com/content/Rtmpyq6Cct/file17802db9cbc_files/bootstrap-3.3.5/shim/respond.min.js</loc>
     
     <lastmod>2017-01-05T13:20:13.723Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/content/Rtmpyq6Cct/file17802db9cbc_files/bootstrap-3.3.5/shim/respond.min.js</loc>
+    <loc>http://yoursite.com/content/Rtmpyq6Cct/file17802db9cbc_files/bootstrap-3.3.5/shim/html5shiv.min.js</loc>
+    
+    <lastmod>2017-01-05T13:20:13.723Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/content/Rtmpyq6Cct/file17802db9cbc_files/navigation-1.1/codefolding.js</loc>
     
     <lastmod>2017-01-05T13:20:13.723Z</lastmod>
     
@@ -478,13 +520,6 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/content/Rtmpyq6Cct/file17802db9cbc_files/bootstrap-3.3.5/css/simplex.min.css</loc>
-    
-    <lastmod>2017-01-05T13:20:13.634Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/content/Rtmpyq6Cct/file17802db9cbc_files/bootstrap-3.3.5/css/sandstone.min.css</loc>
     
     <lastmod>2017-01-05T13:20:13.634Z</lastmod>
@@ -499,14 +534,21 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/content/Rtmpyq6Cct/file17802db9cbc_files/bootstrap-3.3.5/css/journal.min.css</loc>
+    <loc>http://yoursite.com/content/Rtmpyq6Cct/file17802db9cbc_files/bootstrap-3.3.5/css/simplex.min.css</loc>
+    
+    <lastmod>2017-01-05T13:20:13.634Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/content/Rtmpyq6Cct/file17802db9cbc_files/bootstrap-3.3.5/css/lumen.min.css</loc>
     
     <lastmod>2017-01-05T13:20:13.618Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/content/Rtmpyq6Cct/file17802db9cbc_files/bootstrap-3.3.5/css/lumen.min.css</loc>
+    <loc>http://yoursite.com/content/Rtmpyq6Cct/file17802db9cbc_files/bootstrap-3.3.5/css/journal.min.css</loc>
     
     <lastmod>2017-01-05T13:20:13.618Z</lastmod>
     
@@ -520,14 +562,14 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/content/Rtmpyq6Cct/file17802db9cbc_files/bootstrap-3.3.5/css/cosmo.min.css</loc>
+    <loc>http://yoursite.com/content/Rtmpyq6Cct/file17802db9cbc_files/bootstrap-3.3.5/css/bootstrap.min.css</loc>
     
     <lastmod>2017-01-05T13:20:13.465Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/content/Rtmpyq6Cct/file17802db9cbc_files/bootstrap-3.3.5/css/bootstrap.min.css</loc>
+    <loc>http://yoursite.com/content/Rtmpyq6Cct/file17802db9cbc_files/bootstrap-3.3.5/css/cosmo.min.css</loc>
     
     <lastmod>2017-01-05T13:20:13.465Z</lastmod>
     
