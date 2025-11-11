@@ -5,7 +5,7 @@ date: 2017-01-05
 tags: [R, markdown, knitr, reporting]
 ---
 
-Reporting your R-script can be done *in a matter of seconds* by using knitr or R Markdown. These libraries were created to quickly show your **R-code** as well as **results** in a wide variety of document types. Knitr can be used to automatically create a report of an existing R-script. R Markdown uses knitr in combination with **markdown** to create more customised reports.
+testReporting your R-script can be done *in a matter of seconds* by using knitr or R Markdown. These libraries were created to quickly show your **R-code** as well as **results** in a wide variety of document types. Knitr can be used to automatically create a report of an existing R-script. R Markdown uses knitr in combination with **markdown** to create more customised reports.
 
 ![R-Reporting](http://rmarkdown.rstudio.com/images/RMarkdownOutputFormats.png)
 
