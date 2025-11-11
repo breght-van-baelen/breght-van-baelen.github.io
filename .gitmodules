@@ -1,0 +1,3 @@
+[submodule "themes/beautiful-hexo"]
+	path = themes/beautiful-hexo
+	url = https://github.com/breght-van-baelen/hexo-blog-theme.git
