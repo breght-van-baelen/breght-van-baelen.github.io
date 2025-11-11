@@ -1,0 +1,140 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><meta name="author" content="Breght Van Baelen"><link rel="icon" href="/b-logo-rounded.png"><title>Blog</title><meta name="description" content=""><link rel="alternate" type="application/rss+xml" title="Blog" href="/atom.xml"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css"><link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"><link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/css/highlight.css"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"><!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.1.1"></head><body><nav class="navbar navbar-default navbar-fixed-top navbar-custom"><div class="container-fluid"><div class="navbar-header"><button type="button" data-toggle="collapse" data-target="#main-navbar" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="/" class="navbar-brand">Blog</a></div><div id="main-navbar" class="collapse navbar-collapse"><ul class="nav navbar-nav navbar-right"><li><a href="/archives">Archive</a></li></ul></div><div class="avatar-container"><div class="avatar-img-border"><a href="/"><img src="/b-logo-rounded.png" class="avatar-img"></a></div></div></div></nav><header class="header-section"><div class="intro-header no-img"><div class="container"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class="post-heading"><h1>Markdown</h1><h2 class="post-subheading">An easy-to-read, easy-to-write plain text format</h2><p class="post-meta">Posted on Dec 29 2016 · <a href="/tags/markdown/" class="tag post-meta">markdown</a></p></div></div></div></div></div></header><div class="container"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><article role="main" class="blog-post"><p>Markdown is <em>mostly</em> used as a <strong>text-to-HTML conversion tool</strong> for web writers. After writing using <strong>plain text format</strong>, your markdown document can be converted to structurally valid XHTML (or HTML). For instance, GitHub uses markdown to preview readme’s. Also the posts on this blog are written in markdown.</p>
+<span id="more"></span>
+<p>Markdown can not only be converted to HTML. For instance, RStudio uses R Markdown (a combination of markdown and R code chunks) to publish a report about your R code to Word, PDF, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>LaTeX</mtext></mrow><annotation encoding="application/x-tex">\LaTeX</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8988em;vertical-align:-0.2155em;"></span><span class="mord text"><span class="mord textrm">L</span><span class="mspace" style="margin-right:-0.36em;"></span><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6833em;"><span style="top:-2.905em;"><span class="pstrut" style="height:2.7em;"></span><span class="mord"><span class="mord textrm mtight sizing reset-size6 size3">A</span></span></span></span></span></span><span class="mspace" style="margin-right:-0.15em;"></span><span class="mord text"><span class="mord textrm">T</span><span class="mspace" style="margin-right:-0.1667em;"></span><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.4678em;"><span style="top:-2.7845em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord textrm">E</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2155em;"><span></span></span></span></span><span class="mspace" style="margin-right:-0.125em;"></span><span class="mord textrm">X</span></span></span></span></span></span>, or even a presentation.</p>
+<p>The strength of markdown is that a Markdown-formatted document is <strong>publishable as-is</strong>, as plain text, without looking like it’s been marked up with tags or formatting instructions.</p>
+<h2 id="Syntax"><a href="#Syntax" class="headerlink" title="Syntax"></a>Syntax</h2><hr>
+<p>This section covers the basic syntax of markdown. For more details on the syntax redirect to <a target="_blank" rel="noopener" href="https://daringfireball.net/projects/markdown/syntax">daring fireball</a>.</p>
+<h3 id="Block-Elements"><a href="#Block-Elements" class="headerlink" title="Block Elements"></a>Block Elements</h3><hr>
+<h4 id="Headers"><a href="#Headers" class="headerlink" title="Headers"></a>Headers</h4><hr>
+<p>There are two header styles, <strong>Setext</strong> and <strong>Atx</strong>.<br>Setext headers are marked by underlining, equal signs for first-levek headers and dashes for second-level headers.</p>
+<pre><code>H1
+==
+
+H2
+--
+</code></pre>
+<h1 id="H1"><a href="#H1" class="headerlink" title="H1"></a>H1</h1><h2 id="H2"><a href="#H2" class="headerlink" title="H2"></a>H2</h2><p>Atx headers are marked with 1–6 hash characters, corresponding to header levels 1-6.</p>
+<pre><code># H1
+## H2
+### H3
+#### H4
+##### H5
+###### H6
+</code></pre>
+<h1 id="H1-1"><a href="#H1-1" class="headerlink" title="H1"></a>H1</h1><h2 id="H2-1"><a href="#H2-1" class="headerlink" title="H2"></a>H2</h2><h3 id="H3"><a href="#H3" class="headerlink" title="H3"></a>H3</h3><h4 id="H4"><a href="#H4" class="headerlink" title="H4"></a>H4</h4><h5 id="H5"><a href="#H5" class="headerlink" title="H5"></a>H5</h5><h6 id="H6"><a href="#H6" class="headerlink" title="H6"></a>H6</h6><h4 id="Blockquotes"><a href="#Blockquotes" class="headerlink" title="Blockquotes"></a>Blockquotes</h4><hr>
+<p>Blockquotes are similar to quoting passages in an email message. Blockquotes are marked with <code>&gt;</code>. You can mark every line of the blockquote or just the first line. Blockquotes can also be nested. Markdown syntax in a blockquote is allowed.</p>
+<pre><code>&gt; This is the first level of the quote. 
+As you can see, only the first line needs to be marked with a `&gt;`.
+&gt;&gt; Blockquotes can also be nested. 
+This is the second level of the quote.
+</code></pre>
+<blockquote>
+<p>This is the first level of the quote.<br>As you can see, only the first line needs to be marked with a <code>&gt;</code>.</p>
+<blockquote>
+<p>Blockquotes can also be nested.<br>This is the second level of the quote.</p>
+</blockquote>
+</blockquote>
+<h4 id="Lists"><a href="#Lists" class="headerlink" title="Lists"></a>Lists</h4><hr>
+<p>Markdown supports ordered lists, marked with a number following a dot, and unordered lists, marked with a <code>*</code>, <code>+</code> or <code>-</code>. Lists can also be nested with mixed types.</p>
+<pre><code>- item 1 
+- item 2
+    1. item 2.1
+    2. item 2.2
+- item 3
+</code></pre>
+<ul>
+<li>item 1 </li>
+<li>item 2<ol>
+<li>item 2.1</li>
+<li>item 2.2</li>
+</ol>
+</li>
+<li>item 3</li>
+</ul>
+<h4 id="Code-blocks"><a href="#Code-blocks" class="headerlink" title="Code blocks"></a>Code blocks</h4><hr>
+<p>A code block is simply marked with 1 tab or 4 spaces:</p>
+<pre><code>This is a code block
+</code></pre>
+<h4 id="Horizontal-rules"><a href="#Horizontal-rules" class="headerlink" title="Horizontal rules"></a>Horizontal rules</h4><hr>
+<p>Horizontal rules are marked with 3 or more <code>*</code> or <code>-</code>:</p>
+<pre><code>-----
+* * *
+</code></pre>
+<h3 id="Span-Elements"><a href="#Span-Elements" class="headerlink" title="Span Elements"></a>Span Elements</h3><hr>
+<h4 id="Links"><a href="#Links" class="headerlink" title="Links"></a>Links</h4><hr>
+<p>There are 2 types of links in markdown, inline links and reference-style links. In both styles, the link text is marked by square brackets and the title attribute is optional. There are two types of paths for each style of links. Absolute paths refering to global resources or relative paths refering to local resources on the same server.</p>
+<pre><code>This is [an example](http://example.com/ &quot;Title&quot;) inline link.  
+[This inline link](http://example.net/) has no title attribute.  
+[This inline link](/archive/) refers to a local resource.
+</code></pre>
+<p>This is <a href="http://example.com/" title="Title">an example</a> inline link.<br><a target="_blank" rel="noopener" href="http://example.net/">This inline link</a> has no title attribute.<br><a href="/archive/">This inline link</a> refers to a local resource.</p>
+<pre><code>This is [an example][1] reference-style link.
+
+[1]: http://example.com/ &quot;Optional Title Here&quot;
+</code></pre>
+<p>This is <a href="http://example.com/" title="Optional Title Here">an example</a> reference-style link.</p>
+<h4 id="Emphasis"><a href="#Emphasis" class="headerlink" title="Emphasis"></a>Emphasis</h4><hr>
+<p>Emphasis is marked by asterisks <code>*</code> or underscores <code>_</code>. One <code>*</code> or <code>_</code> marks italic text and two <code>*</code>‘s or <code>_</code>‘s mark bold text.</p>
+<pre><code>*single asterisks*  
+_single underscores_  
+**double asterisks**  
+__double underscores__
+</code></pre>
+<p><em>single asterisks</em><br><em>single underscores</em><br><strong>double asterisks</strong><br><strong>double underscores</strong></p>
+<h4 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h4><hr>
+<p>Use backticks for inline code:</p>
+<pre><code>`print()`
+</code></pre>
+<p><code>print()</code></p>
+<h4 id="Images"><a href="#Images" class="headerlink" title="Images"></a>Images</h4><hr>
+<p>Images are marked exactly the same as <a href="#Links">links</a>, but with an exclamation mark <code>!</code> in front.</p>
+<pre><code>![Markdown](/b-logo-rounded.png)
+</code></pre>
+<p><img src="/b-logo-rounded.png" alt="Markdown"></p>
+<h3 id="Backslash-Escapes"><a href="#Backslash-Escapes" class="headerlink" title="Backslash Escapes"></a>Backslash Escapes</h3><hr>
+<p>Markdown provides backslash escapes for the following characters:</p>
+<pre><code>\   backslash
+`   backtick
+*   asterisk
+_   underscore
+&#123;&#125;  curly braces
+[]  square brackets
+()  parentheses
+#   hash mark
++   plus sign
+-   minus sign (hyphen)
+.   dot
+!   exclamation mark
+</code></pre>
+<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><hr>
+<p>Markdown is widely accepted by developers and editors. Nearly every popular content management solution supports Markdown, if not out-of-the-box, then with an easy-to-install extension.</p>
+<h3 id="Markdown-for-Sublime-Text"><a href="#Markdown-for-Sublime-Text" class="headerlink" title="Markdown for Sublime Text"></a>Markdown for Sublime Text</h3><hr>
+<p><strong>Sublime Text 2&#x2F;3</strong> can preview and build markdown files quickly in your web browser with the <a target="_blank" rel="noopener" href="https://packagecontrol.io/packages/Markdown%20Preview">Markdown Preview</a> package.</p>
+<p>Steps:</p>
+<ol>
+<li><a target="_blank" rel="noopener" href="https://packagecontrol.io/installation">Install</a> Package Control if you haven’t yet.</li>
+<li>Use <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>P</kbd> then select <em>Package Control: Install Package</em>.</li>
+<li>Look for <strong>Markdown Preview</strong> and install it.</li>
+</ol>
+<h3 id="Markdown-for-Atom"><a href="#Markdown-for-Atom" class="headerlink" title="Markdown for Atom"></a>Markdown for Atom</h3><hr>
+<p><strong>Atom</strong> has the package <a target="_blank" rel="noopener" href="https://atom.io/packages/markdown-preview-plus">Markdown Preview Plus (MPP)</a>, which can preview any markdown file with <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>m</kbd>.</p>
+<p>Steps:</p>
+<ol>
+<li>Search for and install <code>markdown-preview-plus</code> in Atom’s Settings view.</li>
+<li>Disable the built-in package <code>markdown-preview</code>.</li>
+<li><em>(Optional)</em> Install and enable Pandoc for citation support.</li>
+</ol>
+</article><ul class="pager blog-pager"><li class="previous"><a href="/2017/01/05/reporting_in_r/" data-toggle="tooltip" data-placement="top" title="Reporting in R">← Previous Post</a></li></ul><div class="disqus-comments"><div class="comments"><div id="disqus_thread"></div></div></div><script>var url_parts = window.location.href.split("?");
+var disqus_url = url_parts[0];
+(function () {
+    console.log("enter disqus");
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = "//breght-van-baelen.disqus.com/embed.js";
+    (document.head || d.body ).appendChild(dsq);
+})();</script></div></div></div><footer><div class="container beautiful-jekyll-footer"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><ul class="list-inline text-center footer-links"><li><a target="_blank" rel="noopener" href="https://github.com/breght-van-baelen" title="GitHub"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-stack-1x fa-inverse fa-github"></i></span></a></li><li><a target="_blank" rel="noopener" href="https://www.linkedin.com/in/breght-van-baelen/" title="LinkedIn"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-stack-1x fa-inverse fa-linkedin"></i></span></a></li><li><a href="mailto:breght.vanbaelen@microsoft.com" title="Email me"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-stack-1x fa-inverse fa-envelope"></i></span></a></li></ul><p class="copyright text-muted">© Breght Van Baelen • 2025 <a href="mailto:undefined"></a></p></div></div></div></footer><script src="//cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script><script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><script src="/js/main.js"></script><script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script><script>hljs.initHighlightingOnLoad();</script></body></html>
