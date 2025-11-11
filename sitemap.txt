@@ -1,7 +1,7 @@
 http://example.com/2017/01/05/reporting_in_r/
 http://example.com/2016/12/29/markdown_guide/
 http://example.com/
-http://example.com/tags/markdown/
 http://example.com/tags/R/
+http://example.com/tags/markdown/
 http://example.com/tags/knitr/
 http://example.com/tags/reporting/

@@ -32,9 +32,9 @@
     
     
     
-    <category term="markdown" scheme="http://example.com/tags/markdown/"/>
-    
     <category term="R" scheme="http://example.com/tags/R/"/>
+    
+    <category term="markdown" scheme="http://example.com/tags/markdown/"/>
     
     <category term="knitr" scheme="http://example.com/tags/knitr/"/>
     
