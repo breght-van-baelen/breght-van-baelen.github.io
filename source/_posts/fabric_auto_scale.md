@@ -2,7 +2,7 @@
 title: Fabric Auto-scale
 subtitle: Auto-scale, Pause or Resume a Fabric Capacity on a time-based schedule by deploying an ARM template
 date: 2025-11-13 17:00:00
-tags: [Fabric, Capacity, ARM, Autoscale]
+tags: [Fabric, Capacity, Autoscale, ARM template]
 ---
 Auto-scale, pause, or resume a Fabric Capacity on a time-based schedule without permanently committing to anything. This ARM template lets you run a capacity when you need it, and fall back to a lower tier or pause it outside peak hours. This way, you can trial higher performance on a pay-as-you-go basis instead of immediately provisioning a more expensive, always-on tier.
 
@@ -39,53 +39,53 @@ The placeholder `<schedule>` can be filled-in as an array of scheduling actions 
 
 Below are a few **examples** of how the placeholder `<schedule>` can be filled-in. 
 
-*Upscale the capacity from F64 to F128 every workday between 9am and 5pm:*
-```
+*Upscale the capacity from F64 to F128 every day between 9am and 5pm:*
+```json
 [
   {
       "name": "Daily9amSchedule",
       "operation": "scale",
-      "sku": "F64",
+      "sku": "F128",
       "interval": 1,
-      "frequency": "Week",
-      "advancedSchedule": {
-          "weekDays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
-      },
+      "frequency": "Day",
       "startTime": "2025-11-10T09:00:00+00:00",
       "timeZone": "Europe/Dublin"
   },
   {
       "name": "Daily5pmSchedule",
       "operation": "scale",
-      "sku": "F128",
+      "sku": "F64",
       "interval": 1,
-      "frequency": "Week",
-      "advancedSchedule": {
-          "weekDays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
-      },
+      "frequency": "Day",
       "startTime": "2025-11-10T17:00:00+00:00",
       "timeZone": "Europe/Dublin"
   }
 ]
 ```
 
-*Pause the capacity every day at 5pm and resume it at 9am the following day:*
-```
+*Pause the capacity in the weekends:*
+```json
 [
   {
-      "name": "Daily5pmSuspendSchedule",
+      "name": "WeekendSuspendSchedule",
       "operation": "suspend",
       "interval": 1,
-      "frequency": "Day",
+      "frequency": "Week",
+      "advancedSchedule": {
+          "weekDays": ["Friday"]
+      },
       "startTime": "2025-11-10T17:00:00+00:00",
       "timeZone": "Europe/Dublin"
   }
   {
-      "name": "Daily9amResumeSchedule",
+      "name": "WorkweekResumeSchedule",
       "operation": "resume",
       "interval": 1,
-      "frequency": "Day",
-      "startTime": "2025-11-11T09:00:00+00:00",
+      "frequency": "Week",
+      "advancedSchedule": {
+          "weekDays": ["Monday"]
+      },
+      "startTime": "2025-11-10T09:00:00+00:00",
       "timeZone": "Europe/Dublin"
   },
 ]
