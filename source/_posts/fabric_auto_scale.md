@@ -1,10 +1,8 @@
 ---
 title: Fabric Auto-scale
-subtitle: Auto-scale, Pause or Resume a Fabric Capacity on a time-based schedule by deploying an ARM template
 date: 2025-11-13 17:00:00
-tags: markdown
+tags: [Fabric, Capacity, ARM, Autoscale]
 ---
-# FabricAutoScaling
 Auto-scale, pause or resume a Fabric Capacity on a time-based schedule by deploying an ARM template
 <!-- more -->
 ### Prerequisites
