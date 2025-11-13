@@ -1,10 +1,11 @@
 ---
 title: Fabric Auto-scale
+subtitle: Auto-scale, Pause or Resume a Fabric Capacity on a time-based schedule by deploying an ARM template
 date: 2025-11-13 17:00:00
 tags: [Fabric, Capacity, ARM, Autoscale]
 ---
 Auto-scale, pause or resume a Fabric Capacity on a time-based schedule by deploying an ARM template
-<!-- more -->
+
 ### Prerequisites
 This assumes you already have a Fabric capacity deployed. To deploy the ARM template, install [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli) if you haven't already. Afterwards, run `az login` to create a connection with Azure.
 ### Deploy the ARM template
@@ -13,6 +14,7 @@ Deploy a time-based schedule with **one Azure CLI command**.
 ```
 az deployment group create --resource-group <resource-group> --parameters capacityName='<capacity-name>' schedules='<schedule>' --name fabricautoscale --template-uri "https://raw.githubusercontent.com/breght-van-baelen/FabricAutoScaling/refs/heads/main/DeployFabricAutoScale.json" 
 ```
+<!-- more -->
 
 You only have to fill-in 3 placeholders in this command, namely `<resource-group>`, `<capacity-name>` and `<schedule>`.
 The placeholder `<schedule>` can be filled-in as an array of scheduling actions in the following **structure**.
