@@ -93,5 +93,5 @@ Below are a few **examples** of how the placeholder `<schedule>` can be filled-i
 ### Outcome
 This ARM template will create an **automation account** in the resource group of the Fabric Capacity, that schedules a **runbook**. By default the deployed resources will be located in `uksouth`. you can change the region by adding `location='<region>'` to the `--parameters` in the Azure CLI command.
 
-<img width="1615" height="408" alt="image" src="https://github.com/user-attachments/assets/7998c7e9-418f-4fd4-9b6b-5fcb567b6e92" />
+<img alt="image" src="https://github.com/user-attachments/assets/7998c7e9-418f-4fd4-9b6b-5fcb567b6e92" />
 
