@@ -4,7 +4,7 @@ subtitle: Auto-scale, Pause or Resume a Fabric Capacity on a time-based schedule
 date: 2025-11-13 17:00:00
 tags: [Fabric, Capacity, Autoscale, ARM template]
 ---
-Auto-scale, pause, or resume a Fabric Capacity on a time-based schedule without permanently committing to anything. This ARM template lets you run a capacity when you need it, and fall back to a lower tier or pause it outside peak hours. This way, you can trial higher performance on a pay-as-you-go basis instead of immediately provisioning a more expensive, always-on tier.
+Auto-scale, pause, or resume a Fabric Capacity on a time-based schedule. This ARM template lets you run a capacity when you need it, and fall back to a lower tier or pause the capacity outside peak hours. This way, you can trial higher performance on a pay-as-you-go basis instead of immediately committing to a more expensive, always-on tier.
 
 <!-- more -->
 
